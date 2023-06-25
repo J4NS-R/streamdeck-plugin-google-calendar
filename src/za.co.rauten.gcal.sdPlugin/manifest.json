@@ -1,12 +1,12 @@
 {
 	"SDKVersion": 2,
-	"Author": "Elgato Systems",
+	"Author": "Jans Rautenbach",
 	"CodePath": "app.html",
 	"Description": "Example description",
-	"Name": "Stream Deck Template",
+	"Name": "Gcal Plugin",
 	"Icon": "actions/template/assets/action",
-	"URL": "https://www.elgato.com/en/gaming/stream-deck",
-	"Version": "1.0.2",
+	"URL": "https://rauten.co.za",
+	"Version": "0.0.1",
 	"Software": {
 		"MinimumVersion": "5.0"
 	},
@@ -20,29 +20,20 @@
 			"MinimumVersion": "10"
 		}
 	],
-	"Category": "Template Plugin",
+	"Category": "Calendar",
 	"CategoryIcon": "actions/template/assets/actionimage",
 	"Actions": [
 		{
 			"Icon": "actions/template/assets/actionimage",
 			"Name": "Example Action",
-			"Controllers": ["Keypad", "Encoder"],
-			"Encoder": {
-				"layout": "$B1",
-				"TriggerDescription": {
-					"Rotate": "Describe the rotation",
-					"Push": "Describe the encoder push",
-					"Touch": "Describe the touch",
-					"LongTouch": "Describe the long touch"
-				}
-			},
+			"Controllers": ["Keypad"],
 			"States": [
 				{
 					"Image": "actions/template/assets/action"
 				}
 			],
 			"Tooltip": "This is an example tooltip",
-			"UUID": "com.elgato.template.action",
+			"UUID": "za.co.rauten.gcal.action",
 			"PropertyInspectorPath": "actions/template/property-inspector/inspector.html"
 		}
 	]

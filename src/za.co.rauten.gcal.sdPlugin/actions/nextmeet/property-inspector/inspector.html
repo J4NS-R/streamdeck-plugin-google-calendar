@@ -16,26 +16,27 @@
     <div class="sdpi-wrapper">
         <form id="property-inspector">
                 <div class="sdpi-item">
-                    <div data-localize class="sdpi-item-label" title="Client ID">Client ID</div>
-                    <input data-localize class="sdpi-item-value" name="client_id" type="text" value="" />
+                    <div data-localize class="sdpi-item-label">Events URL</div>
+                    <input data-localize class="sdpi-item-value" name="url_events" type="text" value="" />
                 </div>
                 <div class="sdpi-item">
-                    <div data-localize class="sdpi-item-label" title="API Key">API Key</div>
-                    <input data-localize class="sdpi-item-value" name="api_key" type="text" value="" />
+                    <div data-localize class="sdpi-item-label">Basic Username</div>
+                    <input data-localize class="sdpi-item-value" name="basic_user" type="text" value="" />
+                </div>
+                <div class="sdpi-item">
+                    <div data-localize class="sdpi-item-label">Basic Password</div>
+                    <input data-localize class="sdpi-item-value" name="basic_password" type="text" value="" />
                 </div>
         </form>
-        <div class="sdpi-item">
-            <button
-                    class="sdpi-item-value"
-                    value="Apply Google Config"
-                    id="btn_apply_google_config"
-                    onclick="onApplyGoogleConfClick()">
-                Apply Google Config
-            </button>
-        </div>
-        <button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
-        <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
-        <pre id="content" style="white-space: pre-wrap;"></pre>
+<!--        <div class="sdpi-item">-->
+<!--            <button-->
+<!--                    class="sdpi-item-value"-->
+<!--                    value="Apply Google Config"-->
+<!--                    id="btn_apply_google_config"-->
+<!--                    onclick="onApplyGoogleConfClick()">-->
+<!--                Apply Google Config-->
+<!--            </button>-->
+<!--        </div>-->
     </div>
 
     <div class="sdpi-info-label hidden" style="top: -1000" value=""></div>
@@ -52,8 +53,6 @@
 
     <!-- Property Inspector Source -->
     <script src="inspector.js"></script>
-    <script async defer src="https://apis.google.com/js/api.js" onload="console.log('gapi js loaded')"></script>
-    <script async defer src="https://accounts.google.com/gsi/client" onload="console.log('gsi js loaded')"></script>
 </body>
 
 </html>

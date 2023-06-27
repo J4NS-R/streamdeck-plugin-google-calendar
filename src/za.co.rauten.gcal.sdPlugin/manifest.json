@@ -4,7 +4,7 @@
 	"CodePath": "app.html",
 	"Description": "Example description",
 	"Name": "Gcal Plugin",
-	"Icon": "actions/template/assets/action",
+	"Icon": "actions/nextmeet/assets/meeting",
 	"URL": "https://rauten.co.za",
 	"Version": "0.0.1",
 	"Software": {
@@ -21,20 +21,20 @@
 		}
 	],
 	"Category": "Calendar",
-	"CategoryIcon": "actions/template/assets/actionimage",
+	"CategoryIcon": "actions/nextmeet/assets/meeting",
 	"Actions": [
 		{
-			"Icon": "actions/template/assets/actionimage",
-			"Name": "Example Action",
+			"Icon": "actions/nextmeet/assets/meeting",
+			"Name": "Next Meeting",
 			"Controllers": ["Keypad"],
 			"States": [
 				{
-					"Image": "actions/template/assets/action"
+					"Image": "actions/nextmeet/assets/meeting"
 				}
 			],
-			"Tooltip": "This is an example tooltip",
-			"UUID": "za.co.rauten.gcal.action",
-			"PropertyInspectorPath": "actions/template/property-inspector/inspector.html"
+			"Tooltip": "Show your next meeting from Google Calendar*",
+			"UUID": "za.co.rauten.gcal.action.nextmeet",
+			"PropertyInspectorPath": "actions/nextmeet/property-inspector/inspector.html"
 		}
 	]
 }
